@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Collections.Specialized;
 using System.Security.Cryptography;
 using Newtonsoft.Json;
@@ -14,7 +10,8 @@ namespace CEXIO_API
         public static String Key;
         public static String Secret;
         public static String UserName;
-        public static Int32 MaxRequestsPerTenMin = 550;
+        public const Int32 MaxRequestsPerTenMin = 550;
+
         public enum Commodity { GHS_BTC, BF1_BTC, NMC_BTC, GHS_NMC  }
 
         public static NameValueCollection AuthHeader
